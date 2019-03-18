@@ -1,56 +1,169 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>nuestra historia</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title></title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<script src="js/jquery-3.1.1.min.js"></script>
-	<script src="js/main.js"></script>
+	<link rel="stylesheet" href="css/nivo-slider.css">
+	<link rel="stylesheet" href="css/mi-slider.css">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="js/jquery.1.10.1.min.js" type="text/javascript"></script>
+	<script src="js/jquery.nivo.slider.js"></script>
+
+	<style type="text/css">
+		body{
+			/*background-image: url('img/img-1.png');*/
+			background: rgb(255,255,255);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 1920px;
+		}
+		.aside{
+			background: rgba(0,0,0,.50);
+			color: #fff;
+		}
+		.section{
+			background: rgba(0,0,0,.50);
+			color: #fff;
+		}
+		.header{
+			background: rgba(0,0,0,.50);
+			color: #fff;
+		}
+		.footer{
+			background: rgba(0,0,0,.50);
+			color: #fff;
+			text-align: center;
+		}
+		.tabs{
+			margin: 5px;
+		}
+		.positionTabs{
+			float: right;
+		}
+		.card-img:hover{
+			background: rgba(0,0,0,.25);
+			border-radius: 5px;
+			transition: background 1s, color 1s;
+		}
+		.card-img{
+			background: rgba(255,255,255,.90);
+			border-radius: 5px;
+		}
+
+		.nav1{
+		justify-content: center;
+		list-style:none;
+
+		}
+		.nav1 > li {
+				/*float:left;*/
+				text-decoration: none;
+				list-style:none;
+			}
+			
+			.nav1 li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				list-style:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav1 li a:hover {
+				background-color:#434343;
+				list-style:none;
+				text-decoration:none;
+			}
+			
+			.nav1 li ul {
+				display:none;
+				text-decoration:none;
+				list-style:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav1 li:hover > ul {
+				display:block;
+				text-decoration:none;
+				list-style:none;
+			}
+			
+			.nav1 li ul li {
+				position:relative;
+				text-decoration:none;
+				list-style:none;
+			}
+			
+			.nav1 li ul li ul {
+				right:-140px;
+				top:0px;
+				list-style:none;
+				text-decoration:none;
+			}
+
+	</style>
 </head>
-<body style="background-color:#808080;" class="container">
-	<div style="background: #000;">
-		<p>
-	
-	<h1 style=" margin-top: 12px; text-align: center; color: #fff;font-family:algerian"> <img src="img/hhh3.jpg" style=" float: left; height: 75px"> BUCHANAN´S RESTAURANT </h1>
-	</p>
-<!--<p>
-	
-</p>-->
+<body style="background-color:#808080;">
 
-<div style="float: center; text-align: left;">
-		<img alt="" src="img/local.jpg." style="width: 30%; top: 75%; right: 50%; float: left; padding: 3%;" class="rounded-circle">
-		<img alt="" src="img/43.jpg." style="width: 30%; top: 75%; right: 50%; float: left; padding: 3%;" class="rounded-circle">
-		<img alt="" src="img/13.jpg." style="width: 30%; top: 75%; right: 50%; float: left; padding: 3%;" class="rounded-circle">
-		<p style="padding: 80px; color: rgb(255,255,255);" ><h3 style="color: rgb(255,255,255); margin: 20px;">Todo empezó con un sueño…<br>
-			Historia de BUCHANAN`S RESTAURANT</h3>
+	<div class="container">
+		
+		<div class="row">
 
-			<h6 style="color: rgb(255,255,255); margin: 20px;">
-               Mucho antes de ser BUCHANAN’S RESTAURANT era un banco como todos conocíamos  EL BANCO AZTECA,
- luego de eso fue un restaurante llamado JEYKED  pero este también fue cerrado, 
- observamos que el local se rentaba y ahí fue cuando hablamos con el dueño del local y firmamos el contrato 
-			Pero la idea de poner el restaurante estaba implementada hace 2 años pero nunca había pasado a mas.
- Luego conseguimos los recursos necesarios para plantar nuestro negocio. 
-Pensamos en el nombre que le pondríamos poner y decidimos ponerle Buchanans Restaurant porque es el nombre Buchanan proviene de una bebida ‘WISKY’ llamada ¨Buchanan DeLuxe¨. <br> <br>
-		   Aperturamos nuestro negocio el 1 de diciembre del 2018,
-Buchanan´s es un Restaurante Mexicano que cuenta con la mejor comida mexicana en El Salvador. 
-Somos parte de una cadena de Restaurantes de Exquisita Comida Mexicana,
- preparados con los mejores ingredientes escogidos todos los días para siempre servirlos <br> <br>
+			<header class="col-12 border header" style="background: #000;">
+				<h1 style=" margin-top: 12px; text-align: center; color: #fff;font-family:algerian">
+				 <img src="img/hhh3.jpg" style=" float: left; height: 75px"> BUCHANAN´S RESTAURANT 
+				</h1>
+			</header>
 
-Si lo que deseas es compartir con un grupo de amigos o familia,
-Buchanan´s es el lugar perfecto, ya que contamos con platillos exquisitos para compartir,
- como nuestras Parrilladas, tacos y mucho más asi como tambien puedes acompañar alguno de nuestros deliciosos platillos con tu bebida avorita ya sea con Alcohol o sin Alcohol.
+			<hr style="margin: 2px; width: 100%;">
+
+			<section class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 border section bg-dark">
+				<img alt="" src="img/local.jpg." style="width: 33%; top: 75%; right: 50%; float: left; padding: 3%;" class="rounded-circle">
+				<img alt="" src="img/43.jpg." style="width: 33%; top: 75%; right: 50%; float: left; padding: 3%;" class="rounded-circle">
+				<img alt="" src="img/13.jpg." style="width: 33%; top: 75%; right: 50%; float: left; padding: 3%;" class="rounded-circle">
+				<p style="padding: 80px; color: rgb(255,255,255);" ><h3 style="color: rgb(255,255,255); margin: 20px;"> <br>
+					Todo empezó con un sueño…<br>
+					Historia de BUCHANAN`S RESTAURANT</h3>
+
+					<h6 style="color: rgb(255,255,255); margin: 20px;">
+			             Mucho antes de ser BUCHANAN’S RESTAURANT era un banco como todos conocíamos  EL BANCO AZTECA,
+						 luego de eso fue un restaurante llamado JEYKED  pero este también fue cerrado, 
+						 observamos que el local se rentaba y ahí fue cuando hablamos con el dueño del local y firmamos el contrato 
+									Pero la idea de poner el restaurante estaba implementada hace 2 años pero nunca había pasado a mas.
+						 Luego conseguimos los recursos necesarios para plantar nuestro negocio. 
+						Pensamos en el nombre que le pondríamos poner y decidimos ponerle Buchanans Restaurant porque es el nombre Buchanan proviene de una bebida ‘WISKY’ llamada ¨Buchanan DeLuxe¨. <br> <br>
+								   Aperturamos nuestro negocio el 1 de diciembre del 2018,
+						Buchanan´s es un Restaurante Mexicano que cuenta con la mejor comida mexicana en El Salvador. 
+						Somos parte de una cadena de Restaurantes de Exquisita Comida Mexicana,
+						 preparados con los mejores ingredientes escogidos todos los días para siempre servirlos <br> <br>
+
+						Si lo que deseas es compartir con un grupo de amigos o familia,
+						Buchanan´s es el lugar perfecto, ya que contamos con platillos exquisitos para compartir,
+						 como nuestras Parrilladas, tacos y mucho más asi como tambien puedes acompañar alguno de nuestros deliciosos platillos con tu bebida avorita ya sea con Alcohol o sin Alcohol.
 
 
-Los fines de semana son increíbles, nos esforzamos porque nuestros clientes no solo se deleiten con nuestros platillos,
- sino que vivan un momento agradable, con una atencion exelente.
-
-
-			 </h6>
-			</p>
+						Los fines de semana son increíbles, nos esforzamos porque nuestros clientes no solo se deleiten con nuestros platillos,
+						 sino que vivan un momento agradable, con una atencion exelente.
+					</h6>
+					<a style="margin: 30px; padding: 5px; background: #0e102c; color: #fff;" href="javascript:window.history.go(-1);">
+						volver a la página principal
+					</a>
+				</p>
+				
+			</section>
+			
+			<hr style="margin: 2px; width: 100%;">
+			
+			
 		</div>
-		<a style="margin: 30px; padding: 5px; background: #0e102c; color: #fff;" href="javascript:window.history.go(-1);">volver a menu principal</a>
-		</div>
-
-<script src="js/bootstrap.min.js"></script>
-	<script type="js/popper.min.js"></script>
+		
+		<script type="text/javascript" src="js/popper.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</script>
 </body>
 </html>
