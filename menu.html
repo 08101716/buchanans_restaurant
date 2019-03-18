@@ -1,34 +1,127 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title></title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<script src="js/jquery-3.1.1.min.js"></script>
-	<script src="js/main.js"></script>
-	<script type="text/javascript" src="js/jquery.1.10.1.min.js"></script>
-	<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+	<link rel="stylesheet" href="css/nivo-slider.css">
+	<link rel="stylesheet" href="css/mi-slider.css">
 
-	<title>MENU</title>
-</head>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="js/jquery.1.10.1.min.js" type="text/javascript"></script>
+	<script src="js/jquery.nivo.slider.js"></script>
 
-<body style="background: gray;" class="container">
-	<div  style="background:#000; width: 95%; " >
-		<p>
-	
-	<h1 style=" margin-top: 12px; text-align: center; color:#c13434;font-family:algerian"> <img src="img/hhh3.jpg" style=" float: left; height: 75px"> MENÚ Platillos </h1>
-	</p
-	<p>
-		
-		<h1 style="color: #fff; text-align: center; font-size: 50px;">
-			 <img src="img/adad4.jpg">
-			 <img src="img/mexico.jpg">
+	<style type="text/css">
+		body{
+			/*background-image: url('img/img-1.png');*/
+			background: rgb(255,255,255);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 1920px;
+		}
+		.aside{
+			background: rgba(0,0,0,.50);
+			color: #fff;
+		}
+		.section{
+			background: rgba(0,0,0,.50);
+			color: #fff;
+		}
+		.header{
+			background: rgba(0,0,0,.50);
+			color: #fff;
+		}
+		.footer{
+			background: rgba(0,0,0,.50);
+			color: #fff;
+			text-align: center;
+		}
+		.tabs{
+			margin: 5px;
+		}
+		.positionTabs{
+			float: right;
+		}
+		.card-img:hover{
+			background: rgba(0,0,0,.25);
+			border-radius: 5px;
+			transition: background 1s, color 1s;
+		}
+		.card-img{
+			background: rgba(255,255,255,.90);
+			border-radius: 5px;
+		}
+
+		.nav1{
+		justify-content: center;
+		list-style:none;
+
+		}
+		.nav1 > li {
+				/*float:left;*/
+				text-decoration: none;
+				list-style:none;
+			}
 			
-		</h1>
-	</p>
+			.nav1 li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				list-style:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav1 li a:hover {
+				background-color:#434343;
+				list-style:none;
+				text-decoration:none;
+			}
+			
+			.nav1 li ul {
+				display:none;
+				text-decoration:none;
+				list-style:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav1 li:hover > ul {
+				display:block;
+				text-decoration:none;
+				list-style:none;
+			}
+			
+			.nav1 li ul li {
+				position:relative;
+				text-decoration:none;
+				list-style:none;
+			}
+			
+			.nav1 li ul li ul {
+				right:-140px;
+				top:0px;
+				list-style:none;
+				text-decoration:none;
+			}
 
-	<section class="container-fluid">
+	</style>
+</head>
+<body style="background-color:#808080;">
+
+	<div class="container">
+		
 		<div class="row">
+
+			<header class="col-12 border header" style="background: #000;">
+				<h1 style=" margin-top: 12px; text-align: center; color:#c13434;font-family:algerian"> <img src="img/hhh3.jpg" style=" float: left; height: 75px"> MENÚ Platillos </h1>
+			</header>
+
+			<hr style="margin: 2px; width: 100%;">
+
+			<section class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 border section bg-dark">
+				<div class="row">
 					  <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
 					    <div class="thumbnail">
 					      <a href="img/1.1.jpg">
@@ -76,18 +169,12 @@
 					      </a>
 					    </div>
 					  </div>
-		</div>
-	</section>
-	<p>
-		<h1 style="text-align: center;color: #c13434;font-family: algerian" >Menú Bebidas</h1>
-	</p>
-	<p>
-		<i>
-	<h1 style="color: #fff; text-align: center; font-family: Bahnschrift SemiBold Condensed"> Bebidas  Alcoholicas</h1>
-	</i>
-	</p>
-	<section class="container-fluid" style="background: rgb(0,0,0); margin-bottom: 200px; padding-bottom: 20px;">
-		<div class="row">
+				</div>
+				
+				<h1 style="text-align: center;color: #c13434;font-family: algerian" >Menú Bebidas</h1>
+				<h1 style="color: #fff; text-align: center; font-family: Bahnschrift SemiBold Condensed"> Bebidas  Alcoholicas</h1>
+
+				<div class="row">
 					  <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
 					    <div class="thumbnail">
 					      <a href="img/1.jpg">
@@ -136,19 +223,19 @@
 					    </div>
 					  </div>
 					  
-		</div>
-		<p style="justify-content: center;">
+					</div>
+
+					<p style="justify-content: center;">
 					  	<h1 style="color: #fff; text-align: center; font-family: Bahnschrift SemiBold Condensed">Acompaña tus bebidas con unas deliciosas boquitas</h1>
 					  </p>
 
-					  <div class="row">
+					<div class="row">
 					  <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
 					    <div class="thumbnail">
 					      <a href="img/bq1 (1).jpg">
 					        <img src="img/bq1 (1).jpg" alt="Lights" style="width:100%" class="img-thumbnail">
 					        <div class="caption">
-					        	<p><h3  style="text-align: center; color: #f37171"> </p> </h3>
-					          <p style="text-decoration: none; color: rgb(255,255,255);">
+					        	<p><h3  style="text-align: center; color: #f37171">Fajitas de res o pollo</h3> </p>
 					        </div>
 					      </a>
 					    </div>
@@ -159,8 +246,7 @@
 					      <a href="img/bq1 (2).jpg">
 					        <img src="img/bq1 (2).jpg" alt="Nature" style="width:100%" class="img-thumbnail">
 					        <div class="caption">
-					        	<p><h3  style="text-align: center; color: #f37171"> </p> </h3>
-					          <p style="text-decoration: none; color: rgb(255,255,255);"></p>
+					        	<p><h3  style="text-align: center; color: #f37171">Banquete Mixto</h3></p>
 					        </div>
 					      </a>
 					    </div>
@@ -171,8 +257,7 @@
 					      <a href="img/bq1 (3).jpg">
 					        <img src="img/bq1 (3).jpg" alt="Fjords" style="width:100%" class="img-thumbnail">
 					        <div class="caption">
-					        	<p><h3  style="text-align: center; color: #f37171"> </p> </h3>
-					          <p style="text-decoration: none; color: rgb(255,255,255);"> </p>
+					        	<p><h3  style="text-align: center; color: #f37171">Chicharrones de Cerdo</h3></p>
 					        </div>
 					      </a>
 					    </div>
@@ -183,17 +268,26 @@
 					      <a href="img/bq1 (4).jpg">
 					        <img src="img/bq1 (4).jpg" alt="Fjords" style="width:100%" class="img-thumbnail">
 					        <div class="caption">
-					        	<p><h3  style="text-align: center; color: #f37171"></p> </h3>
-					          <p style="text-decoration: none; color: rgb(255,255,255);"> </p>
+					        	<p><h3  style="text-align: center; color: #f37171"></h3></p>
 					        </div>
 					      </a>
 					    </div>
 					  </div>
-					  
+					  <a style="margin: 15px; padding: 10px; background: #0e102c; color: #fff;" href="javascript:window.history.go(-1);">Volver a la página principal</a>
+				</div>  
+
+			</section>
+			
+			<hr style="margin: 2px; width: 100%;">
+
+			<footer class="col-12 border footer bg-dark"> 
+				
+			</footer>
+			
 		</div>
-					  <a style="margin: 400px; padding: 10px; background: #0e102c; color: #fff;" href="javascript:window.history.go(-1);">Volver a la página principal</a>
-	</section>
-
-
+		
+		<script type="text/javascript" src="js/popper.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</script>
 </body>
 </html>
